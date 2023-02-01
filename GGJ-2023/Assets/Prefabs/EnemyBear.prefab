@@ -12,9 +12,10 @@ GameObject:
   - component: {fileID: 2585733890554858776}
   - component: {fileID: 1929577223645023991}
   - component: {fileID: 45682063951401960}
+  - component: {fileID: -3272149692106253809}
   m_Layer: 7
   m_Name: EnemyBear
-  m_TagString: Bear
+  m_TagString: Enemy
   m_Icon: {fileID: 2974397684917235467, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -117,3 +118,16 @@ MonoBehaviour:
   speed: 3
   damage: 2.5
   spawner: {fileID: 0}
+--- !u!65 &-3272149692106253809
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1968939028561516990}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 0.2}
+  m_Center: {x: 0, y: 0, z: 0}

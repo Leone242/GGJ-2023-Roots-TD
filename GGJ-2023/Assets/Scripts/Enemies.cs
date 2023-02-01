@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Enemies : MonoBehaviour, IEnemy
+public class Enemies : MonoBehaviour
 {
     private float hp;
     [SerializeField]
@@ -47,19 +47,15 @@ public class Enemies : MonoBehaviour, IEnemy
         throw new System.NotImplementedException();
     }
 
-    public void FindNearestTarget()
-    {
-        throw new System.NotImplementedException();
-    }
 
     public void MoveToTarget()
     {
         rb.MovePosition(transform.position + tDirection.normalized * speed * Time.deltaTime);
     }
 
-    public void TakeDamage()
+    public void TakeDamage(float dmg)
     {
-        hp -= damageTaken;
+        hp -= dmg;
         if (hp <= 0)
         {
             this.enabled = false;

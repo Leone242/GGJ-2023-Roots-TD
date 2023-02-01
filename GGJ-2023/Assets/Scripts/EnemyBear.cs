@@ -2,9 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class EnemyBear : MonoBehaviour, IEnemy
+public class EnemyBear : MonoBehaviour
 {
-    private float hp = 15;
+    private float hp = 1;
     [SerializeField]
     private float speed = 3;
     [SerializeField]
@@ -22,8 +22,7 @@ public class EnemyBear : MonoBehaviour, IEnemy
     public void Start()
     {
         rb = GetComponent<Rigidbody>();
-        target = GameObject.FindWithTag("Pillbox");
-        targetPosition = target.transform.position;
+        
 
     }
 
@@ -34,38 +33,56 @@ public class EnemyBear : MonoBehaviour, IEnemy
 
     private void FixedUpdate()
     {
-        targetDistance = Vector3.Distance(transform.position, targetPosition);
+        if (GameObject.FindWithTag("Pillbox") == true)
+        {
+            target = GameObject.FindWithTag("Pillbox");
+        }   
+        else
+        {
+            target = GameObject.FindWithTag("Door");
+        }
 
-        tDirection = targetPosition - transform.position;
+        Quaternion rotation = Quaternion.LookRotation(targetPosition);
+        rb.rotation = rotation;
+
+        targetDistance = Vector3.Distance(transform.position, targetPosition);
 
         if (targetDistance > 2)
         {
-            MoveToTarget();
+            MoveToTarget(target);
         }
-        else if(targetDistance <= 1)
+        else if (targetDistance <= 1)
         {
             Atack(damage);
         }
 
+        targetPosition = target.transform.position;
+        tDirection = targetPosition - transform.position;
     }
+
     public void Atack(float damage)
     {
         throw new System.NotImplementedException();
     }
 
-    public void FindNearestTarget()
-    {
-        throw new System.NotImplementedException();
-    }
 
-    public void MoveToTarget()
+    public void MoveToTarget(GameObject target)
     {
         rb.MovePosition(transform.position + tDirection.normalized * speed * Time.deltaTime);
     }
 
-    public void TakeDamage()
+    private void OnTriggerEnter(Collider c)
     {
-        hp -= damageTaken;
+        if (c.tag == "Rock")
+        {
+            float dmg = Random.Range(2, 4);
+            TakeDamage(dmg);
+        }
+    }
+
+    public void TakeDamage(float dmg)
+    {
+        hp -= dmg;
         if (hp <= 0)
         {
             this.enabled = false;
