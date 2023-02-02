@@ -21,5 +21,10 @@ public class Door : MonoBehaviour
     public void TakeDamage(float damage)
     {
         hp -= damage;
+        if(hp <= 0)
+        {
+            destroyed = true;
+            Destroy(gameObject);
+        }
     }
 }

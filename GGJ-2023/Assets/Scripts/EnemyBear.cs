@@ -7,8 +7,7 @@ public class EnemyBear : MonoBehaviour
     private float hp = 1;
     [SerializeField]
     private float speed = 3;
-    [SerializeField]
-    private float damage = 2.5f;
+    private float damage;
     private float damageTaken;
     private GameObject target;
     private float spawnDistance;
@@ -18,12 +17,12 @@ public class EnemyBear : MonoBehaviour
     [HideInInspector]
     public Spawner spawner;
     private Rigidbody rb;
+    private float timer = 0;
+    private float timeAtack = 4;
 
     public void Start()
     {
         rb = GetComponent<Rigidbody>();
-        
-
     }
 
     private void Update()
@@ -53,7 +52,13 @@ public class EnemyBear : MonoBehaviour
         }
         else if (targetDistance <= 1)
         {
-            Atack(damage);
+            damage = Random.Range(3, 5);
+            timer += Time.deltaTime;
+            if (timer > timeAtack)
+            {
+                Atack(damage);
+                timer = 0;
+            }
         }
 
         targetPosition = target.transform.position;
@@ -62,7 +67,14 @@ public class EnemyBear : MonoBehaviour
 
     public void Atack(float damage)
     {
-        throw new System.NotImplementedException();
+        if(target.tag == "Door")
+        {
+            target.GetComponent<Door>().TakeDamage(damage);
+        }
+        else if(target.tag == "Pillbox")
+        {
+            target.GetComponent<Pillbox>().TakeDamage(damage);
+        }
     }
 
 

@@ -4,18 +4,16 @@ using UnityEngine;
 
 public class Pillbox : MonoBehaviour
 {
-    private float damageTaken;
-    private float hp;
+    private float hp = 30;
     private bool destroyed = false;
-
-    void Start()
+    
+    public void TakeDamage(float damage)
     {
-        
-    }
-
-
-    void Update()
-    {
-        
+        hp -= damage;
+        if(hp <= 0)
+        {
+            destroyed = true;
+            Destroy(gameObject);
+        }
     }
 }

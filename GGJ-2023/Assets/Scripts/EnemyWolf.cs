@@ -7,8 +7,7 @@ public class EnemyWolf : MonoBehaviour
     private float hp = 1;
     [SerializeField]
     private float speed = 5;
-    [SerializeField]
-    private float damage = 2;
+    private float damage;
     private GameObject target;
     private float targetDistance;
     private Vector3 tDirection;
@@ -16,7 +15,8 @@ public class EnemyWolf : MonoBehaviour
     [HideInInspector]
     public Spawner spawner;
     private Rigidbody rb;
-    private Door door;
+    private float timer = 0;
+    private float timeAtack = 2;
 
     public void Start()
     {
@@ -26,12 +26,8 @@ public class EnemyWolf : MonoBehaviour
 
     }
 
-    private void Update()
-    {
-        
-    }
 
-    private void FixedUpdate()
+    private void Update()
     {
         Quaternion rotation = Quaternion.LookRotation(targetPosition);
         rb.rotation = rotation;
@@ -40,19 +36,32 @@ public class EnemyWolf : MonoBehaviour
 
         tDirection = targetPosition - transform.position;
 
-        if(targetDistance > 2)
+        if(targetDistance > 1)
         {
             MoveToTarget();
         }
         else if(targetDistance <= 1)
         {
-            Atack(damage);
+            damage = Random.Range(1, 3);
+            
+            timer += Time.deltaTime;
+            if(timer > timeAtack)
+            {
+                Atack(damage);
+                timer = 0;
+            }
+        }
+        else
+        {
+            MoveToTarget();
         }
 
     }
     public void Atack(float damage)
     {
-        door.TakeDamage(damage);
+        Debug.Log(damage);
+        //target.GetComponent<Door>().TakeDamage(damage);
+        MoveToTarget();
     }
 
 

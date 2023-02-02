@@ -10,7 +10,6 @@ public class Rock : MonoBehaviour
     private void Start()
     {
         rb = GetComponent<Rigidbody>();
-        Debug.Log("throw");
     }
 
     private void FixedUpdate()
