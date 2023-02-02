@@ -9,6 +9,7 @@ TagManager:
   - Enemy
   - Rock
   - Soldier
+  - Tower
   layers:
   - Default
   - TransparentFX

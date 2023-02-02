@@ -9,7 +9,7 @@ public class EnemyBear : MonoBehaviour
     private float speed = 3;
     private float damage;
     private float damageTaken;
-    private GameObject target;
+    public GameObject target;
     private float spawnDistance;
     private float targetDistance;
     private Vector3 tDirection;

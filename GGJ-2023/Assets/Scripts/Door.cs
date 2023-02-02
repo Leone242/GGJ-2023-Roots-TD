@@ -7,6 +7,8 @@ public class Door : MonoBehaviour
     private float hp = 50;
     private bool destroyed = false;
     public float damage;
+    [SerializeField]
+    public GameObject Panel;
 
     void Start()
     {
@@ -23,6 +25,8 @@ public class Door : MonoBehaviour
         hp -= damage;
         if(hp <= 0)
         {
+            Panel.GetComponent<PanelController>().EndGame();
+
             destroyed = true;
             Destroy(gameObject);
         }

@@ -4,13 +4,12 @@ using UnityEngine;
 
 public class Tower : MonoBehaviour
 {
-    private float damageTaken;
-    private float hp;
-    private bool destroyed = false;
+    public float hp = 40;
+
 
     void Start()
     {
-        
+        gameObject.SetActive(true);
     }
 
 

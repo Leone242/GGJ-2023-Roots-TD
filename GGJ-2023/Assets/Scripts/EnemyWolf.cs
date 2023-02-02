@@ -8,7 +8,7 @@ public class EnemyWolf : MonoBehaviour
     [SerializeField]
     private float speed = 5;
     private float damage;
-    private GameObject target;
+    public GameObject target;
     private float targetDistance;
     private Vector3 tDirection;
     private Vector3 targetPosition;
@@ -17,13 +17,12 @@ public class EnemyWolf : MonoBehaviour
     private Rigidbody rb;
     private float timer = 0;
     private float timeAtack = 2;
+    
 
     public void Start()
     {
         rb = GetComponent<Rigidbody>();
-        target = GameObject.FindWithTag("Door");
         targetPosition = target.transform.position;
-
     }
 
 
@@ -59,8 +58,7 @@ public class EnemyWolf : MonoBehaviour
     }
     public void Atack(float damage)
     {
-        Debug.Log(damage);
-        //target.GetComponent<Door>().TakeDamage(damage);
+        target.GetComponent<Door>().TakeDamage(damage);
         MoveToTarget();
     }
 

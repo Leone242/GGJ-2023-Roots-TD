@@ -10,12 +10,21 @@ public class Spawner : MonoBehaviour
     [SerializeField]
     private GameObject EnemyBear;
     [SerializeField]
+    private GameObject Door;
+    public GameObject Pillbox;
+    public GameObject Tower;
+    [SerializeField]
     private float timeToSpawn;
     private float timer = 0;
     private float timer2 = 0;
     private int horde = 30;
 
 
+    private void Awake()
+    {
+        Pillbox = GameObject.FindWithTag("Pillbox");
+        Tower = GameObject.FindWithTag("Tower");
+    }
     void Update()
     {
         timer += Time.deltaTime;    
@@ -23,11 +32,17 @@ public class Spawner : MonoBehaviour
         
         if(timer > timeToSpawn *0.5)
         {
+            EnemyWolf.GetComponent<EnemyWolf>().target = Door;
             SpawnNewEnemy(EnemyWolf);
             timer = 0;
         }
         if(timer2 > timeToSpawn)
         {
+            EnemyBear.GetComponent<EnemyBear>().target = Pillbox;
+            if (!Pillbox.gameObject.active)
+            {
+                EnemyBear.GetComponent<EnemyBear>().target = Tower;
+            }
             SpawnNewEnemy(EnemyBear);
             timer2 = 0;
         }
@@ -44,7 +59,7 @@ public class Spawner : MonoBehaviour
 
         if(spawnPosition.z < 7) 
         { 
-            spawnPosition = RandomPosition();
+            RandomPosition();
         }  
         else 
         { 
