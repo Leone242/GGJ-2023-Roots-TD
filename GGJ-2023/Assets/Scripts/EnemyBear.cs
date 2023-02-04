@@ -4,44 +4,45 @@ using UnityEngine;
 
 public class EnemyBear : MonoBehaviour
 {
-    private float hp = 1;
+    public GameObject Spawner;
+    public float hp = 8;
     [SerializeField]
     private float speed = 3;
     private float damage;
-    private float damageTaken;
     public GameObject target;
-    private float spawnDistance;
     private float targetDistance;
     private Vector3 tDirection;
     private Vector3 targetPosition;
-    [HideInInspector]
-    public Spawner spawner;
     private Rigidbody rb;
     private float timer = 0;
     private float timeAtack = 4;
+    private GameObject tree;
+    private GameObject door;
+    private GameObject pillbox;
+    private GameObject tower;
+    private GameObject soldier;
 
     public void Start()
     {
         rb = GetComponent<Rigidbody>();
-    }
 
-    private void Update()
-    {
-
+        tree = GameObject.FindWithTag("Tree");
+        door = GameObject.FindWithTag("Door");
+        tower = GameObject.FindWithTag("Tower");
+        pillbox = GameObject.FindWithTag("Pillbox");
+        soldier = GameObject.FindWithTag("Soldier");
     }
 
     private void FixedUpdate()
     {
-        if (GameObject.FindWithTag("Pillbox") == true)
-        {
-            target = GameObject.FindWithTag("Pillbox");
-        }   
-        else
-        {
-            target = GameObject.FindWithTag("Door");
-        }
+        
+        target = FindTarget();
+        
 
-        Quaternion rotation = Quaternion.LookRotation(targetPosition);
+        targetPosition = target.transform.position;
+        tDirection = targetPosition - transform.position;
+
+        Quaternion rotation = Quaternion.LookRotation(tree.transform.position);
         rb.rotation = rotation;
 
         targetDistance = Vector3.Distance(transform.position, targetPosition);
@@ -61,46 +62,74 @@ public class EnemyBear : MonoBehaviour
             }
         }
 
-        targetPosition = target.transform.position;
-        tDirection = targetPosition - transform.position;
+    }
+
+    private GameObject FindTarget()
+    {
+        if (pillbox)
+        {
+            target = pillbox;
+        }
+        else if (!pillbox && tower)
+        {
+            target = tower;
+        }
+        else if (soldier)
+        {
+            target = soldier;
+        }
+        else
+        {
+            target = door;
+        }
+        return target;
     }
 
     public void Atack(float damage)
     {
-        if(target.tag == "Door")
+        target = FindTarget();
+        if (target == door)
         {
             target.GetComponent<Door>().TakeDamage(damage);
         }
-        else if(target.tag == "Pillbox")
+        else if (target == pillbox)
         {
             target.GetComponent<Pillbox>().TakeDamage(damage);
+        }
+        else if (target == tower)
+        {
+            target.GetComponent<Tower>().TakeDamage(damage);
+        } 
+        else if (target == soldier)
+        {
+            target.GetComponent<Soldier>().TakeDamage(damage + 2);
         }
     }
 
 
     public void MoveToTarget(GameObject target)
     {
-        rb.MovePosition(transform.position + tDirection.normalized * speed * Time.deltaTime);
+        rb.MovePosition(transform.position + 
+            tDirection.normalized * speed * Time.deltaTime);
     }
 
     private void OnTriggerEnter(Collider c)
     {
         if (c.tag == "Rock")
         {
-            float dmg = Random.Range(2, 4);
+            float dmg = Random.Range(1, 3);
             TakeDamage(dmg);
         }
     }
-
     public void TakeDamage(float dmg)
     {
         hp -= dmg;
         if (hp <= 0)
         {
-            this.enabled = false;
+            Spawner.GetComponent<Spawner>().EnemyKilled();
             Destroy(gameObject);
-            //spawner.KillEnemies();
+
         }
     }
-
 }
+

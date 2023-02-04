@@ -48,6 +48,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 2
+  enemy: {fileID: 0}
   Rock: {fileID: 3904340348188236163, guid: f98667cdf79f39148b3cbfd99dd3e1fe, type: 3}
 --- !u!212 &9111235701392063794
 SpriteRenderer:

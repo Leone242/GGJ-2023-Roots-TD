@@ -11,8 +11,8 @@ GameObject:
   - component: {fileID: 6269473529197645739}
   - component: {fileID: 6328228601881849415}
   - component: {fileID: 342960163}
-  - component: {fileID: 342960162}
   - component: {fileID: 5123327502582447716}
+  - component: {fileID: 363437554555269249}
   m_Layer: 7
   m_Name: EnemyWolf
   m_TagString: Enemy
@@ -101,23 +101,8 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 4
+  m_Constraints: 84
   m_CollisionDetection: 0
---- !u!114 &342960162
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4497097035466773826}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 39969f0549c8e3446b6acb7f9da4b327, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 5
-  damage: 2
-  spawner: {fileID: 0}
 --- !u!65 &5123327502582447716
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -131,3 +116,19 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 0.2}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &363437554555269249
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4497097035466773826}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 39969f0549c8e3446b6acb7f9da4b327, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Spawner: {fileID: 0}
+  hp: 0
+  speed: 5
+  target: {fileID: 0}

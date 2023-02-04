@@ -4,7 +4,8 @@ using UnityEngine;
 
 public class EnemyWolf : MonoBehaviour
 {
-    private float hp = 1;
+    public GameObject Spawner;
+    public float hp = 5;
     [SerializeField]
     private float speed = 5;
     private float damage;
@@ -12,17 +13,18 @@ public class EnemyWolf : MonoBehaviour
     private float targetDistance;
     private Vector3 tDirection;
     private Vector3 targetPosition;
-    [HideInInspector]
-    public Spawner spawner;
     private Rigidbody rb;
     private float timer = 0;
     private float timeAtack = 2;
-    
+    private float life;
+
 
     public void Start()
     {
+        GameObject.FindWithTag("Spawner");
         rb = GetComponent<Rigidbody>();
         targetPosition = target.transform.position;
+        
     }
 
 
@@ -35,16 +37,16 @@ public class EnemyWolf : MonoBehaviour
 
         tDirection = targetPosition - transform.position;
 
-        if(targetDistance > 1)
+        if (targetDistance > 1)
         {
             MoveToTarget();
         }
-        else if(targetDistance <= 1)
+        else if (targetDistance <= 1)
         {
             damage = Random.Range(1, 3);
-            
+
             timer += Time.deltaTime;
-            if(timer > timeAtack)
+            if (timer > timeAtack)
             {
                 Atack(damage);
                 timer = 0;
@@ -65,12 +67,13 @@ public class EnemyWolf : MonoBehaviour
 
     public void MoveToTarget()
     {
-        rb.MovePosition(transform.position + tDirection.normalized * speed * Time.deltaTime);
+        rb.MovePosition(transform.position + 
+            tDirection.normalized * speed * Time.deltaTime);
     }
 
     private void OnTriggerEnter(Collider c)
     {
-        if(c.tag == "Rock")
+        if (c.tag == "Rock")
         {
             float dmg = Random.Range(2, 4);
             TakeDamage(dmg);
@@ -82,9 +85,9 @@ public class EnemyWolf : MonoBehaviour
         hp -= dmg;
         if (hp <= 0)
         {
-            this.enabled = false;
+            Spawner.GetComponent<Spawner>().EnemyKilled();
             Destroy(gameObject);
-            //spawner.KillEnemies();
+
         }
     }
 }

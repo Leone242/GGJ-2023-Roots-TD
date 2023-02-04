@@ -4,31 +4,21 @@ using UnityEngine;
 
 public class Door : MonoBehaviour
 {
-    private float hp = 50;
-    private bool destroyed = false;
-    public float damage;
+    public float hp;
     [SerializeField]
     public GameObject Panel;
 
-    void Start()
+    public void Start()
     {
-        
+        hp = 50;
     }
-
-    void Update()
-    {
-        
-    }
-
     public void TakeDamage(float damage)
     {
         hp -= damage;
         if(hp <= 0)
         {
             Panel.GetComponent<PanelController>().EndGame();
-
-            destroyed = true;
-            Destroy(gameObject);
+            gameObject.SetActive(false);    
         }
     }
 }

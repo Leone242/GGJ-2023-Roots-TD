@@ -10,6 +10,8 @@ TagManager:
   - Rock
   - Soldier
   - Tower
+  - Spawner
+  - Tree
   layers:
   - Default
   - TransparentFX

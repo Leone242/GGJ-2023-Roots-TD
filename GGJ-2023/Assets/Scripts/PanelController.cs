@@ -95,6 +95,13 @@ public class PanelController : MonoBehaviour
         }
     }
 
+    public void KillEnemy()
+    {
+        Debug.Log("kill enemy");
+        leaves++;
+        canvas.GetComponent<UpdateCanvas>().UpdateLeaves(leaves);
+    }
+
     public void EndGame()
     {
         canvas.GetComponent<UpdateCanvas>().GameOverText();

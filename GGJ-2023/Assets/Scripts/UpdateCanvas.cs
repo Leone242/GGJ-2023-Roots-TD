@@ -8,7 +8,9 @@ public class UpdateCanvas : MonoBehaviour
     [SerializeField]
     public Text Leaves;
     [SerializeField]
-    public Text GameOver;
+    public GameObject GameOver;
+    [SerializeField]
+    public GameObject Buttons;
 
     public void UpdateLeaves(int leaves)
     {
@@ -17,6 +19,8 @@ public class UpdateCanvas : MonoBehaviour
 
     public void GameOverText()
     {
-        GameOver.enabled = true;
+        GameOver.active = true;
+
+        Buttons.active = false;
     }
 }

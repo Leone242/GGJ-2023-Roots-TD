@@ -4,62 +4,28 @@ using UnityEngine;
 
 public class Enemies : MonoBehaviour
 {
-    private float hp;
-    [SerializeField]
-    private float speed;
-    [SerializeField]
-    private float damage;
-    private float damageTaken;
-    private GameObject target;
-    private float spawnDistance;
-    private float targetDistance;
-    private Vector3 tDirection;
-    private Vector3 targetPosition;
-    [HideInInspector]
-    public Spawner spawner;
-    private Rigidbody rb;
+    public float hp = 8;
+    public GameObject Spawner;
 
 
+    private void Start()
+    {
+        
+
+    }
 
     private void Update()
     {
-
+        Spawner = GameObject.FindWithTag("Spawner");
     }
-
-    private void FixedUpdate()
-    {
-        targetDistance = Vector3.Distance(transform.position, targetPosition);
-
-        tDirection = targetPosition - transform.position;
-
-        if (targetDistance > 2)
-        {
-            MoveToTarget();
-        }
-        else if (targetDistance <= 1)
-        {
-            Atack(damage);
-        }
-
-    }
-    public void Atack(float damage)
-    {
-        throw new System.NotImplementedException();
-    }
-
-
-    public void MoveToTarget()
-    {
-        rb.MovePosition(transform.position + tDirection.normalized * speed * Time.deltaTime);
-    }
-
     public void TakeDamage(float dmg)
     {
         hp -= dmg;
         if (hp <= 0)
         {
-            this.enabled = false;
-            Destroy(gameObject);         
+            Spawner.GetComponent<Spawner>().EnemyKilled();
+            Destroy(gameObject);
+            
         }
     }
 }
