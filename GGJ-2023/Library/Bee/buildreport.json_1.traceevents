@@ -1,0 +1,544 @@
+{ "pid": 0, "tid": -1, "ph": "M", "name": "process_name", "args": { "name": "BeeDriver" } },
+{ "pid": 0, "tid": -1, "ph": "M", "name": "process_sort_index", "args": { "sort_index": "-2" } },
+{ "pid": 0, "tid": 1, "ph": "M", "name": "thread_name", "args": { "name": "" } },
+{ "pid": 0, "tid": 1, "ts": 1675626214824788, "dur": 7618467, "ph": "X", "name": "Build Player", "args": {} },
+{ "pid": 0, "tid": 1, "ts": 1675626214825945, "dur": 18856, "ph": "X", "name": "WriteBuildProgramData", "args": {} },
+{ "pid": 0, "tid": 1, "ts": 1675626214844806, "dur": 482957, "ph": "X", "name": "Run Backend", "args": {} },
+{ "pid": 0, "tid": 1, "ts": 1675626215327765, "dur": 1698851, "ph": "X", "name": "BuildProgram", "args": {} },
+{ "pid": 0, "tid": 1, "ts": 1675626217026618, "dur": 5404518, "ph": "X", "name": "Run Backend", "args": {} },
+{ "pid": 0, "tid": 1, "ts": 1675626222431139, "dur": 12115, "ph": "X", "name": "Finish", "args": {} },
+{ "pid": 0, "tid": 1, "ts": 1675626222443960, "dur": 14, "ph": "X", "name": "", "args": {} },
+{ "pid": 35942, "tid": -1, "ph": "M", "name": "process_name", "args": { "name": "netcorerun.dll" } },
+{ "pid": 35942, "tid": -1, "ph": "M", "name": "process_sort_index", "args": { "sort_index": "-1" } },
+{ "pid": 35942, "tid": 1, "ph": "M", "name": "thread_name", "args": { "name": "" } },
+{ "pid": 35942, "tid": 1, "ts": 1675626216350523, "dur": 657514, "ph": "X", "name": "BuildProgram", "args": {} },
+{ "pid": 35942, "tid": 1, "ts": 1675626216352382, "dur": 182410, "ph": "X", "name": "BuildProgramContextConstructor", "args": {} },
+{ "pid": 35942, "tid": 1, "ts": 1675626216984502, "dur": 7269, "ph": "X", "name": "OutputData.Write", "args": {} },
+{ "pid": 35942, "tid": 1, "ts": 1675626216991775, "dur": 16250, "ph": "X", "name": "Backend.Write", "args": {} },
+{ "pid": 35942, "tid": 1, "ts": 1675626216992847, "dur": 13914, "ph": "X", "name": "JsonToString", "args": {} },
+{ "pid": 35942, "tid": 1, "ts": 1675626217014496, "dur": 1724, "ph": "X", "name": "", "args": {} },
+{ "pid": 35942, "tid": 1, "ts": 1675626217013125, "dur": 3127, "ph": "X", "name": "Write chrome-trace events", "args": {} },
+{ "pid": 0, "tid": 1, "ts": 1675626222444133, "dur": 323, "ph": "X", "name": "buildprogram0.traceevents", "args": {} },
+{ "cat":"", "pid":12345, "tid":0, "ts":0, "ph":"M", "name":"process_name", "args": { "name":"bee_backend" } }
+,{ "pid":12345, "tid":0, "ts":1675626217091149, "dur":2264, "ph":"X", "name": "DriverInitData",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1675626217093421, "dur":138, "ph":"X", "name": "Tundra",  "args": { "detail":"RemoveStaleOutputs" }}
+,{ "pid":12345, "tid":0, "ts":1675626217093606, "dur":20, "ph":"X", "name": "Tundra",  "args": { "detail":"PrepareNodes" }}
+,{ "pid":12345, "tid":0, "ts":1675626217093626, "dur":341, "ph":"X", "name": "Tundra",  "args": { "detail":"BuildQueueInit" }}
+,{ "pid":12345, "tid":0, "ts":1675626217094036, "dur":836, "ph":"X", "name": "EnqueueRequestedNodes",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1675626217094872, "dur":2, "ph":"X", "name": "SortWorkingStack",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1675626222413237, "dur":137, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1675626222413374, "dur":17, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1675626222413391, "dur":4, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1675626222413395, "dur":9, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1675626222413404, "dur":4, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1675626222413408, "dur":9, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1675626222413418, "dur":3, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1675626222413421, "dur":7, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1675626222413428, "dur":1, "ph":"X", "name": "SharedResourceDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1675626222413444, "dur":2, "ph":"X", "name": "BuildQueueDestroyTail",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1675626222413548, "dur":2950, "ph":"X", "name": "Tundra",  "args": { "detail":"Write AllBuiltNodes" }}
+,{ "pid":12345, "tid":1, "ts":1675626217095159, "dur":0, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1675626217095159, "dur":7883, "ph":"X", "name": "CheckDagSignatures",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1675626217103052, "dur":1, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"WriteText Library/Bee/artifacts/WinPlayerBuildProgram/Data/app.info" }}
+,{ "pid":12345, "tid":1, "ts":1675626217103058, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1675626217104567, "dur":427, "ph":"X", "name": "WriteText",  "args": { "detail":"Library/Bee/artifacts/WinPlayerBuildProgram/Data/app.info" }}
+,{ "pid":12345, "tid":1, "ts":1675626217104999, "dur":64, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Roots of Furry/GGJ-2023_Data/app.info" }}
+,{ "pid":12345, "tid":1, "ts":1675626217105066, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1675626217170362, "dur":4045, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Roots of Furry/GGJ-2023_Data/app.info" }}
+,{ "pid":12345, "tid":1, "ts":1675626217174409, "dur":150, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Roots of Furry/MonoBleedingEdge/etc/mono/4.5/settings.map" }}
+,{ "pid":12345, "tid":1, "ts":1675626217174562, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1675626217175033, "dur":93976, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Roots of Furry/MonoBleedingEdge/etc/mono/4.5/settings.map" }}
+,{ "pid":12345, "tid":1, "ts":1675626217269057, "dur":177, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Roots of Furry/MonoBleedingEdge/etc/mono/4.0/Browsers/Compat.browser" }}
+,{ "pid":12345, "tid":1, "ts":1675626217269237, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1675626217269956, "dur":180325, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Roots of Furry/MonoBleedingEdge/etc/mono/4.0/Browsers/Compat.browser" }}
+,{ "pid":12345, "tid":1, "ts":1675626217450350, "dur":104, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Roots of Furry/MonoBleedingEdge/etc/mono/4.0/settings.map" }}
+,{ "pid":12345, "tid":1, "ts":1675626217450457, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1675626217450538, "dur":249615, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Roots of Furry/MonoBleedingEdge/etc/mono/4.0/settings.map" }}
+,{ "pid":12345, "tid":1, "ts":1675626217700216, "dur":154523, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Roots of Furry/MonoBleedingEdge/etc/mono/2.0/web.config" }}
+,{ "pid":12345, "tid":1, "ts":1675626217854746, "dur":3, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1675626217854757, "dur":2123, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Roots of Furry/MonoBleedingEdge/etc/mono/2.0/web.config" }}
+,{ "pid":12345, "tid":1, "ts":1675626217856973, "dur":214, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Roots of Furry/MonoBleedingEdge/etc/mono/2.0/DefaultWsdlHelpGenerator.aspx" }}
+,{ "pid":12345, "tid":1, "ts":1675626217857192, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1675626217857202, "dur":1918494, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Roots of Furry/MonoBleedingEdge/etc/mono/2.0/DefaultWsdlHelpGenerator.aspx" }}
+,{ "pid":12345, "tid":1, "ts":1675626219775869, "dur":336, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Roots of Furry/GGJ-2023_Data/Resources/unity default resources" }}
+,{ "pid":12345, "tid":1, "ts":1675626219776212, "dur":3, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1675626219777318, "dur":717022, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Roots of Furry/GGJ-2023_Data/Resources/unity default resources" }}
+,{ "pid":12345, "tid":1, "ts":1675626220494411, "dur":14655, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Roots of Furry/GGJ-2023_Data/Managed/UnityEngine.WindModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1675626220509069, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1675626220509532, "dur":1279, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Roots of Furry/GGJ-2023_Data/Managed/UnityEngine.WindModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1675626220510869, "dur":14667, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Roots of Furry/GGJ-2023_Data/Managed/UnityEngine.VRModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1675626220525540, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1675626220525606, "dur":1317, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Roots of Furry/GGJ-2023_Data/Managed/UnityEngine.VRModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1675626220526984, "dur":25544, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Roots of Furry/GGJ-2023_Data/Managed/UnityEngine.VirtualTexturingModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1675626220552531, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1675626220552537, "dur":77615, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Roots of Furry/GGJ-2023_Data/Managed/UnityEngine.VirtualTexturingModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1675626220630201, "dur":26043, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Roots of Furry/GGJ-2023_Data/Managed/UnityEngine.VFXModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1675626220656247, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1675626220656251, "dur":1571, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Roots of Furry/GGJ-2023_Data/Managed/UnityEngine.VFXModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1675626220657870, "dur":22220, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Roots of Furry/GGJ-2023_Data/Managed/UnityEngine.UnityWebRequestWWWModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1675626220680094, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1675626220680101, "dur":1069, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Roots of Furry/GGJ-2023_Data/Managed/UnityEngine.UnityWebRequestWWWModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1675626220681216, "dur":169, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Roots of Furry/GGJ-2023_Data/Managed/UnityEngine.UnityWebRequestModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1675626220681388, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1675626220681394, "dur":1072, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Roots of Furry/GGJ-2023_Data/Managed/UnityEngine.UnityWebRequestModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1675626220682511, "dur":16274, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Roots of Furry/GGJ-2023_Data/Managed/UnityEngine.UnityWebRequestAudioModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1675626220698789, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1675626220698795, "dur":1106, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Roots of Furry/GGJ-2023_Data/Managed/UnityEngine.UnityWebRequestAudioModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1675626220699949, "dur":11834, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Roots of Furry/GGJ-2023_Data/Managed/UnityEngine.UnityTestProtocolModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1675626220711787, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1675626220711813, "dur":1074, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Roots of Furry/GGJ-2023_Data/Managed/UnityEngine.UnityTestProtocolModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1675626220712935, "dur":13040, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Roots of Furry/GGJ-2023_Data/Managed/UnityEngine.UnityConnectModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1675626220725979, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1675626220725985, "dur":1171, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Roots of Furry/GGJ-2023_Data/Managed/UnityEngine.UnityConnectModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1675626220727203, "dur":11984, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Roots of Furry/GGJ-2023_Data/Managed/UnityEngine.UnityAnalyticsCommonModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1675626220739191, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1675626220739198, "dur":79205, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Roots of Furry/GGJ-2023_Data/Managed/UnityEngine.UnityAnalyticsCommonModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1675626220818585, "dur":83841, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Roots of Furry/GGJ-2023_Data/Managed/UnityEngine.UNETModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1675626220902447, "dur":6, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1675626220902458, "dur":2654, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Roots of Furry/GGJ-2023_Data/Managed/UnityEngine.UNETModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1675626220905159, "dur":31221, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Roots of Furry/GGJ-2023_Data/Managed/UnityEngine.SubsystemsModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1675626220936384, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1675626220936390, "dur":1644, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Roots of Furry/GGJ-2023_Data/Managed/UnityEngine.SubsystemsModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1675626220938085, "dur":13642, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Roots of Furry/GGJ-2023_Data/Managed/UnityEngine.StreamingModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1675626220951731, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1675626220951738, "dur":31533, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Roots of Furry/GGJ-2023_Data/Managed/UnityEngine.StreamingModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1675626220983318, "dur":156, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Roots of Furry/GGJ-2023_Data/Managed/UnityEngine.SpriteShapeModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1675626220983477, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1675626220983482, "dur":108732, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Roots of Furry/GGJ-2023_Data/Managed/UnityEngine.SpriteShapeModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1675626221092697, "dur":46241, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Roots of Furry/GGJ-2023_Data/Managed/UnityEngine.ScreenCaptureModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1675626221138949, "dur":3, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1675626221138966, "dur":154971, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Roots of Furry/GGJ-2023_Data/Managed/UnityEngine.ScreenCaptureModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1675626221294103, "dur":877, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Roots of Furry/GGJ-2023_Data/Managed/UnityEngine.PhysicsModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1675626221294991, "dur":3, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1675626221295008, "dur":5200, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Roots of Furry/GGJ-2023_Data/Managed/UnityEngine.PhysicsModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1675626221300457, "dur":82460, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Roots of Furry/GGJ-2023_Data/Managed/UnityEngine.NVIDIAModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1675626221382920, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1675626221382926, "dur":63001, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Roots of Furry/GGJ-2023_Data/Managed/UnityEngine.NVIDIAModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1675626221446085, "dur":99348, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Roots of Furry/GGJ-2023_Data/Managed/UnityEngine.GIModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1675626221545450, "dur":4, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1675626221545467, "dur":5162, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Roots of Furry/GGJ-2023_Data/Managed/UnityEngine.GIModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1675626221550799, "dur":35122, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Roots of Furry/GGJ-2023_Data/Managed/UnityEngine.dll" }}
+,{ "pid":12345, "tid":1, "ts":1675626221585925, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1675626221585931, "dur":1745, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Roots of Furry/GGJ-2023_Data/Managed/UnityEngine.dll" }}
+,{ "pid":12345, "tid":1, "ts":1675626221587732, "dur":211788, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Roots of Furry/GGJ-2023_Data/Managed/UnityEngine.ClusterInputModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1675626221799524, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1675626221799530, "dur":2018, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Roots of Furry/GGJ-2023_Data/Managed/UnityEngine.ClusterInputModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1675626221801598, "dur":189, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Roots of Furry/GGJ-2023_Data/Managed/UnityEngine.AudioModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1675626221801790, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1675626221801799, "dur":65537, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Roots of Furry/GGJ-2023_Data/Managed/UnityEngine.AudioModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1675626221867499, "dur":45350, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Roots of Furry/GGJ-2023_Data/Managed/UnityEngine.ARModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1675626221912853, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1675626221912859, "dur":33194, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Roots of Furry/GGJ-2023_Data/Managed/UnityEngine.ARModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1675626221946101, "dur":375, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Roots of Furry/GGJ-2023_Data/Managed/Unity.VisualScripting.Flow.dll" }}
+,{ "pid":12345, "tid":1, "ts":1675626221946478, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1675626221946483, "dur":2161, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Roots of Furry/GGJ-2023_Data/Managed/Unity.VisualScripting.Flow.dll" }}
+,{ "pid":12345, "tid":1, "ts":1675626221948692, "dur":221, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Roots of Furry/GGJ-2023_Data/Managed/Unity.Timeline.dll" }}
+,{ "pid":12345, "tid":1, "ts":1675626221948916, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1675626221948920, "dur":1425, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Roots of Furry/GGJ-2023_Data/Managed/Unity.Timeline.dll" }}
+,{ "pid":12345, "tid":1, "ts":1675626221950392, "dur":137, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Roots of Furry/GGJ-2023_Data/Managed/Unity.Services.Core.Threading.dll" }}
+,{ "pid":12345, "tid":1, "ts":1675626221950532, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1675626221950537, "dur":14021, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Roots of Furry/GGJ-2023_Data/Managed/Unity.Services.Core.Threading.dll" }}
+,{ "pid":12345, "tid":1, "ts":1675626221964610, "dur":38618, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Roots of Furry/GGJ-2023_Data/Managed/Unity.Burst.Cecil.Pdb.dll" }}
+,{ "pid":12345, "tid":1, "ts":1675626222003232, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1675626222003238, "dur":1845, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Roots of Furry/GGJ-2023_Data/Managed/Unity.Burst.Cecil.Pdb.dll" }}
+,{ "pid":12345, "tid":1, "ts":1675626222005138, "dur":121203, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Roots of Furry/GGJ-2023_Data/Managed/Unity.Burst.Cecil.dll" }}
+,{ "pid":12345, "tid":1, "ts":1675626222126346, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1675626222126352, "dur":220870, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Roots of Furry/GGJ-2023_Data/Managed/Unity.Burst.Cecil.dll" }}
+,{ "pid":12345, "tid":1, "ts":1675626222347388, "dur":1881, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Roots of Furry/GGJ-2023_Data/Managed/System.ComponentModel.Composition.dll" }}
+,{ "pid":12345, "tid":1, "ts":1675626222349280, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1675626222349296, "dur":29992, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Roots of Furry/GGJ-2023_Data/Managed/System.ComponentModel.Composition.dll" }}
+,{ "pid":12345, "tid":1, "ts":1675626222379470, "dur":1130, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Roots of Furry/GGJ-2023_Data/Managed/Mono.Security.dll" }}
+,{ "pid":12345, "tid":1, "ts":1675626222380609, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1675626222380624, "dur":4903, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Roots of Furry/GGJ-2023_Data/Managed/Mono.Security.dll" }}
+,{ "pid":12345, "tid":1, "ts":1675626222385685, "dur":24912, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Roots of Furry/GGJ-2023_Data/Plugins/x86_64/lib_burst_generated.dll" }}
+,{ "pid":12345, "tid":1, "ts":1675626222410600, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1675626222411501, "dur":1633, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Roots of Furry/GGJ-2023_Data/Plugins/x86_64/lib_burst_generated.dll" }}
+,{ "pid":12345, "tid":1, "ts":1675626222413203, "dur":2, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"Player" }}
+,{ "pid":12345, "tid":1, "ts":1675626222413207, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1675626217095340, "dur":0, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1675626217095340, "dur":7753, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1675626217103094, "dur":123305, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Roots of Furry/MonoBleedingEdge/etc/mono/mconfig/config.xml" }}
+,{ "pid":12345, "tid":2, "ts":1675626217226403, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1675626217226807, "dur":1682, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Roots of Furry/MonoBleedingEdge/etc/mono/mconfig/config.xml" }}
+,{ "pid":12345, "tid":2, "ts":1675626217228548, "dur":414716, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Roots of Furry/MonoBleedingEdge/etc/mono/4.5/machine.config" }}
+,{ "pid":12345, "tid":2, "ts":1675626217643268, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1675626217643274, "dur":1474, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Roots of Furry/MonoBleedingEdge/etc/mono/4.5/machine.config" }}
+,{ "pid":12345, "tid":2, "ts":1675626217644826, "dur":34252, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Roots of Furry/MonoBleedingEdge/etc/mono/4.0/machine.config" }}
+,{ "pid":12345, "tid":2, "ts":1675626217679082, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1675626217679089, "dur":1052, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Roots of Furry/MonoBleedingEdge/etc/mono/4.0/machine.config" }}
+,{ "pid":12345, "tid":2, "ts":1675626217680190, "dur":117, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Roots of Furry/MonoBleedingEdge/etc/mono/2.0/Browsers/Compat.browser" }}
+,{ "pid":12345, "tid":2, "ts":1675626217680309, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1675626217680996, "dur":60711, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Roots of Furry/MonoBleedingEdge/etc/mono/2.0/Browsers/Compat.browser" }}
+,{ "pid":12345, "tid":2, "ts":1675626217741797, "dur":156, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Roots of Furry/MonoBleedingEdge/etc/mono/2.0/settings.map" }}
+,{ "pid":12345, "tid":2, "ts":1675626217741975, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1675626217742048, "dur":96209, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Roots of Furry/MonoBleedingEdge/etc/mono/2.0/settings.map" }}
+,{ "pid":12345, "tid":2, "ts":1675626217838456, "dur":191798, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Roots of Furry/MonoBleedingEdge/etc/mono/2.0/machine.config" }}
+,{ "pid":12345, "tid":2, "ts":1675626218030262, "dur":3, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1675626218030276, "dur":2663, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Roots of Furry/MonoBleedingEdge/etc/mono/2.0/machine.config" }}
+,{ "pid":12345, "tid":2, "ts":1675626218033102, "dur":270, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Roots of Furry/MonoBleedingEdge/etc/mono/config" }}
+,{ "pid":12345, "tid":2, "ts":1675626218033378, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1675626218033390, "dur":137301, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Roots of Furry/MonoBleedingEdge/etc/mono/config" }}
+,{ "pid":12345, "tid":2, "ts":1675626218170843, "dur":303, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Roots of Furry/MonoBleedingEdge/etc/mono/browscap.ini" }}
+,{ "pid":12345, "tid":2, "ts":1675626218171153, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1675626218171166, "dur":74779, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Roots of Furry/MonoBleedingEdge/etc/mono/browscap.ini" }}
+,{ "pid":12345, "tid":2, "ts":1675626218246083, "dur":165908, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Roots of Furry/MonoBleedingEdge/EmbedRuntime/MonoPosixHelper.dll" }}
+,{ "pid":12345, "tid":2, "ts":1675626218411995, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1675626218412341, "dur":1590, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Roots of Furry/MonoBleedingEdge/EmbedRuntime/MonoPosixHelper.dll" }}
+,{ "pid":12345, "tid":2, "ts":1675626218413978, "dur":447034, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Roots of Furry/MonoBleedingEdge/EmbedRuntime/mono-2.0-bdwgc.dll" }}
+,{ "pid":12345, "tid":2, "ts":1675626218861016, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1675626218861111, "dur":10578, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Roots of Furry/MonoBleedingEdge/EmbedRuntime/mono-2.0-bdwgc.dll" }}
+,{ "pid":12345, "tid":2, "ts":1675626218872124, "dur":2144539, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Roots of Furry/UnityPlayer.dll" }}
+,{ "pid":12345, "tid":2, "ts":1675626221092228, "dur":3, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1675626221092242, "dur":47749, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Roots of Furry/UnityPlayer.dll" }}
+,{ "pid":12345, "tid":2, "ts":1675626221140146, "dur":45366, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Roots of Furry/GGJ-2023_Data/Managed/UnityEngine.ProfilerModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1675626221185524, "dur":3, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1675626221185537, "dur":110097, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Roots of Furry/GGJ-2023_Data/Managed/UnityEngine.ProfilerModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1675626221295807, "dur":47612, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Roots of Furry/GGJ-2023_Data/Managed/UnityEngine.PerformanceReportingModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1675626221343427, "dur":3, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1675626221343440, "dur":4613, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Roots of Furry/GGJ-2023_Data/Managed/UnityEngine.PerformanceReportingModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1675626221348167, "dur":505, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Roots of Furry/GGJ-2023_Data/Managed/UnityEngine.InputLegacyModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1675626221348677, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1675626221348686, "dur":2749, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Roots of Furry/GGJ-2023_Data/Managed/UnityEngine.InputLegacyModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1675626221351524, "dur":523, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Roots of Furry/GGJ-2023_Data/Managed/UnityEngine.IMGUIModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1675626221352052, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1675626221352061, "dur":2569, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Roots of Furry/GGJ-2023_Data/Managed/UnityEngine.IMGUIModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1675626221354699, "dur":20235, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Roots of Furry/GGJ-2023_Data/Managed/UnityEngine.ImageConversionModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1675626221374943, "dur":3, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1675626221374953, "dur":69735, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Roots of Furry/GGJ-2023_Data/Managed/UnityEngine.ImageConversionModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1675626221444857, "dur":510, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Roots of Furry/GGJ-2023_Data/Managed/UnityEngine.GridModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1675626221445375, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1675626221445390, "dur":4467, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Roots of Furry/GGJ-2023_Data/Managed/UnityEngine.GridModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1675626221450010, "dur":131090, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Roots of Furry/GGJ-2023_Data/Managed/UnityEngine.DSPGraphModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1675626221581104, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1675626221581110, "dur":1826, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Roots of Furry/GGJ-2023_Data/Managed/UnityEngine.DSPGraphModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1675626221583009, "dur":1688, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Roots of Furry/GGJ-2023_Data/Managed/UnityEngine.CoreModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1675626221584702, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1675626221584708, "dur":2807, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Roots of Furry/GGJ-2023_Data/Managed/UnityEngine.CoreModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1675626221587572, "dur":223684, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Roots of Furry/GGJ-2023_Data/Managed/UnityEngine.ClusterRendererModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1675626221811259, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1675626221811266, "dur":75629, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Roots of Furry/GGJ-2023_Data/Managed/UnityEngine.ClusterRendererModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1675626221887019, "dur":627, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Roots of Furry/GGJ-2023_Data/Managed/UnityEngine.AnimationModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1675626221887652, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1675626221887663, "dur":24537, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Roots of Furry/GGJ-2023_Data/Managed/UnityEngine.AnimationModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1675626221912254, "dur":32451, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Roots of Furry/GGJ-2023_Data/Managed/UnityEngine.AccessibilityModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1675626221944708, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1675626221944712, "dur":2959, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Roots of Furry/GGJ-2023_Data/Managed/UnityEngine.AccessibilityModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1675626221947718, "dur":195, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Roots of Furry/GGJ-2023_Data/Managed/Unity.VisualScripting.Antlr3.Runtime.dll" }}
+,{ "pid":12345, "tid":2, "ts":1675626221947916, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1675626221947921, "dur":5854, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Roots of Furry/GGJ-2023_Data/Managed/Unity.VisualScripting.Antlr3.Runtime.dll" }}
+,{ "pid":12345, "tid":2, "ts":1675626221953825, "dur":308, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Roots of Furry/GGJ-2023_Data/Managed/Unity.Services.Core.Registration.dll" }}
+,{ "pid":12345, "tid":2, "ts":1675626221954136, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1675626221954141, "dur":1088, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Roots of Furry/GGJ-2023_Data/Managed/Unity.Services.Core.Registration.dll" }}
+,{ "pid":12345, "tid":2, "ts":1675626221955275, "dur":181, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Roots of Furry/GGJ-2023_Data/Managed/Unity.Services.Core.Internal.dll" }}
+,{ "pid":12345, "tid":2, "ts":1675626221955458, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1675626221955463, "dur":1666, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Roots of Furry/GGJ-2023_Data/Managed/Unity.Services.Core.Internal.dll" }}
+,{ "pid":12345, "tid":2, "ts":1675626221957181, "dur":126, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Roots of Furry/GGJ-2023_Data/Managed/Unity.Services.Core.Environments.dll" }}
+,{ "pid":12345, "tid":2, "ts":1675626221957310, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1675626221957314, "dur":1468, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Roots of Furry/GGJ-2023_Data/Managed/Unity.Services.Core.Environments.dll" }}
+,{ "pid":12345, "tid":2, "ts":1675626221958830, "dur":128, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Roots of Furry/GGJ-2023_Data/Managed/Unity.Services.Core.Device.dll" }}
+,{ "pid":12345, "tid":2, "ts":1675626221958960, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1675626221958964, "dur":1388, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Roots of Furry/GGJ-2023_Data/Managed/Unity.Services.Core.Device.dll" }}
+,{ "pid":12345, "tid":2, "ts":1675626221960397, "dur":121, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Roots of Furry/GGJ-2023_Data/Managed/Unity.Services.Core.Analytics.dll" }}
+,{ "pid":12345, "tid":2, "ts":1675626221960520, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1675626221960524, "dur":1338, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Roots of Furry/GGJ-2023_Data/Managed/Unity.Services.Core.Analytics.dll" }}
+,{ "pid":12345, "tid":2, "ts":1675626221961910, "dur":127, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Roots of Furry/GGJ-2023_Data/Managed/Unity.InternalAPIEngineBridge.001.dll" }}
+,{ "pid":12345, "tid":2, "ts":1675626221962039, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1675626221962044, "dur":1064, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Roots of Furry/GGJ-2023_Data/Managed/Unity.InternalAPIEngineBridge.001.dll" }}
+,{ "pid":12345, "tid":2, "ts":1675626221963156, "dur":131, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Roots of Furry/GGJ-2023_Data/Managed/Unity.Burst.Unsafe.dll" }}
+,{ "pid":12345, "tid":2, "ts":1675626221963289, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1675626221963293, "dur":1207, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Roots of Furry/GGJ-2023_Data/Managed/Unity.Burst.Unsafe.dll" }}
+,{ "pid":12345, "tid":2, "ts":1675626221964551, "dur":45748, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Roots of Furry/GGJ-2023_Data/Managed/Unity.Burst.Cecil.Rocks.dll" }}
+,{ "pid":12345, "tid":2, "ts":1675626222010303, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1675626222010309, "dur":7876, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Roots of Furry/GGJ-2023_Data/Managed/Unity.Burst.Cecil.Rocks.dll" }}
+,{ "pid":12345, "tid":2, "ts":1675626222018235, "dur":162, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Roots of Furry/GGJ-2023_Data/Managed/Unity.2D.Tilemap.Extras.dll" }}
+,{ "pid":12345, "tid":2, "ts":1675626222018399, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1675626222018404, "dur":1754, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Roots of Furry/GGJ-2023_Data/Managed/Unity.2D.Tilemap.Extras.dll" }}
+,{ "pid":12345, "tid":2, "ts":1675626222020204, "dur":205, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Roots of Furry/GGJ-2023_Data/Managed/Unity.2D.SpriteShape.Runtime.dll" }}
+,{ "pid":12345, "tid":2, "ts":1675626222020411, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1675626222020417, "dur":1069, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Roots of Furry/GGJ-2023_Data/Managed/Unity.2D.SpriteShape.Runtime.dll" }}
+,{ "pid":12345, "tid":2, "ts":1675626222021531, "dur":132, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Roots of Furry/GGJ-2023_Data/Managed/Unity.2D.PixelPerfect.dll" }}
+,{ "pid":12345, "tid":2, "ts":1675626222021665, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1675626222021669, "dur":1398, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Roots of Furry/GGJ-2023_Data/Managed/Unity.2D.PixelPerfect.dll" }}
+,{ "pid":12345, "tid":2, "ts":1675626222023115, "dur":156, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Roots of Furry/GGJ-2023_Data/Managed/Unity.2D.Common.Runtime.dll" }}
+,{ "pid":12345, "tid":2, "ts":1675626222023273, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1675626222023277, "dur":62785, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Roots of Furry/GGJ-2023_Data/Managed/Unity.2D.Common.Runtime.dll" }}
+,{ "pid":12345, "tid":2, "ts":1675626222086113, "dur":171, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Roots of Furry/GGJ-2023_Data/Managed/Unity.2D.Animation.Runtime.dll" }}
+,{ "pid":12345, "tid":2, "ts":1675626222086287, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1675626222086292, "dur":2678, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Roots of Furry/GGJ-2023_Data/Managed/Unity.2D.Animation.Runtime.dll" }}
+,{ "pid":12345, "tid":2, "ts":1675626222089018, "dur":168, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Roots of Furry/GGJ-2023_Data/Managed/System.Transactions.dll" }}
+,{ "pid":12345, "tid":2, "ts":1675626222089190, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1675626222089201, "dur":1708, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Roots of Furry/GGJ-2023_Data/Managed/System.Transactions.dll" }}
+,{ "pid":12345, "tid":2, "ts":1675626222090972, "dur":400, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Roots of Furry/GGJ-2023_Data/Managed/System.Security.dll" }}
+,{ "pid":12345, "tid":2, "ts":1675626222091375, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1675626222091380, "dur":1269, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Roots of Furry/GGJ-2023_Data/Managed/System.Security.dll" }}
+,{ "pid":12345, "tid":2, "ts":1675626222092696, "dur":240, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Roots of Furry/GGJ-2023_Data/Managed/System.Runtime.dll" }}
+,{ "pid":12345, "tid":2, "ts":1675626222092939, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1675626222092943, "dur":1777, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Roots of Furry/GGJ-2023_Data/Managed/System.Runtime.dll" }}
+,{ "pid":12345, "tid":2, "ts":1675626222094771, "dur":251, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Roots of Furry/GGJ-2023_Data/Managed/System.Numerics.dll" }}
+,{ "pid":12345, "tid":2, "ts":1675626222095025, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1675626222095030, "dur":21768, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Roots of Furry/GGJ-2023_Data/Managed/System.Numerics.dll" }}
+,{ "pid":12345, "tid":2, "ts":1675626222116846, "dur":246, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Roots of Furry/GGJ-2023_Data/Managed/System.IO.Compression.dll" }}
+,{ "pid":12345, "tid":2, "ts":1675626222117094, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1675626222117099, "dur":1646, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Roots of Furry/GGJ-2023_Data/Managed/System.IO.Compression.dll" }}
+,{ "pid":12345, "tid":2, "ts":1675626222118796, "dur":2480, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Roots of Furry/GGJ-2023_Data/Managed/System.dll" }}
+,{ "pid":12345, "tid":2, "ts":1675626222121279, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1675626222121283, "dur":230409, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Roots of Furry/GGJ-2023_Data/Managed/System.dll" }}
+,{ "pid":12345, "tid":2, "ts":1675626222351857, "dur":685, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Roots of Furry/GGJ-2023_Data/Managed/netstandard.dll" }}
+,{ "pid":12345, "tid":2, "ts":1675626222352550, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1675626222352564, "dur":32432, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Roots of Furry/GGJ-2023_Data/Managed/netstandard.dll" }}
+,{ "pid":12345, "tid":2, "ts":1675626222385161, "dur":465, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Roots of Furry/GGJ-2023_Data/Managed/Assembly-CSharp.dll" }}
+,{ "pid":12345, "tid":2, "ts":1675626222385634, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1675626222385649, "dur":2673, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Roots of Furry/GGJ-2023_Data/Managed/Assembly-CSharp.dll" }}
+,{ "pid":12345, "tid":2, "ts":1675626222388433, "dur":547, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Roots of Furry/GGJ-2023_Data/StreamingAssets/UnityServicesProjectConfiguration.json" }}
+,{ "pid":12345, "tid":2, "ts":1675626222388986, "dur":3, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1675626222390883, "dur":2485, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Roots of Furry/GGJ-2023_Data/StreamingAssets/UnityServicesProjectConfiguration.json" }}
+,{ "pid":12345, "tid":2, "ts":1675626222393487, "dur":105, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Roots of Furry/GGJ-2023_Data/sharedassets0.assets.resS" }}
+,{ "pid":12345, "tid":2, "ts":1675626222393598, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1675626222393607, "dur":3588, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Roots of Furry/GGJ-2023_Data/sharedassets0.assets.resS" }}
+,{ "pid":12345, "tid":2, "ts":1675626222397284, "dur":11391, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Roots of Furry/GGJ-2023_Data/RuntimeInitializeOnLoads.json" }}
+,{ "pid":12345, "tid":2, "ts":1675626222408679, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1675626222408709, "dur":1312, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Roots of Furry/GGJ-2023_Data/RuntimeInitializeOnLoads.json" }}
+,{ "pid":12345, "tid":2, "ts":1675626222410079, "dur":3156, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1675626217095464, "dur":0, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1675626217095464, "dur":7633, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1675626217103097, "dur":173, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Roots of Furry/MonoBleedingEdge/etc/mono/4.5/Browsers/Compat.browser" }}
+,{ "pid":12345, "tid":3, "ts":1675626217103273, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1675626217171661, "dur":262520, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Roots of Furry/MonoBleedingEdge/etc/mono/4.5/Browsers/Compat.browser" }}
+,{ "pid":12345, "tid":3, "ts":1675626217434255, "dur":222599, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Roots of Furry/MonoBleedingEdge/etc/mono/4.0/web.config" }}
+,{ "pid":12345, "tid":3, "ts":1675626217656858, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1675626217656864, "dur":1322, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Roots of Furry/MonoBleedingEdge/etc/mono/4.0/web.config" }}
+,{ "pid":12345, "tid":3, "ts":1675626217658250, "dur":147, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Roots of Furry/MonoBleedingEdge/etc/mono/4.0/DefaultWsdlHelpGenerator.aspx" }}
+,{ "pid":12345, "tid":3, "ts":1675626217658400, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1675626217658424, "dur":2116867, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Roots of Furry/MonoBleedingEdge/etc/mono/4.0/DefaultWsdlHelpGenerator.aspx" }}
+,{ "pid":12345, "tid":3, "ts":1675626219775498, "dur":711994, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Roots of Furry/GGJ-2023.exe" }}
+,{ "pid":12345, "tid":3, "ts":1675626220487499, "dur":3, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1675626220487509, "dur":3041, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Roots of Furry/GGJ-2023.exe" }}
+,{ "pid":12345, "tid":3, "ts":1675626220490632, "dur":49253, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Roots of Furry/GGJ-2023_Data/Managed/UnityEngine.XRModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1675626220539893, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1675626220539936, "dur":89887, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Roots of Furry/GGJ-2023_Data/Managed/UnityEngine.XRModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1675626220629876, "dur":25880, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Roots of Furry/GGJ-2023_Data/Managed/UnityEngine.VideoModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1675626220655759, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1675626220655766, "dur":2031, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Roots of Furry/GGJ-2023_Data/Managed/UnityEngine.VideoModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1675626220657861, "dur":13006, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Roots of Furry/GGJ-2023_Data/Managed/UnityEngine.VehiclesModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1675626220670871, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1675626220670877, "dur":1216, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Roots of Furry/GGJ-2023_Data/Managed/UnityEngine.VehiclesModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1675626220672142, "dur":14193, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Roots of Furry/GGJ-2023_Data/Managed/UnityEngine.UnityWebRequestTextureModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1675626220686339, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1675626220686345, "dur":1129, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Roots of Furry/GGJ-2023_Data/Managed/UnityEngine.UnityWebRequestTextureModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1675626220687521, "dur":16143, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Roots of Furry/GGJ-2023_Data/Managed/UnityEngine.UnityWebRequestAssetBundleModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1675626220703668, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1675626220703675, "dur":1143, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Roots of Furry/GGJ-2023_Data/Managed/UnityEngine.UnityWebRequestAssetBundleModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1675626220704866, "dur":12373, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Roots of Furry/GGJ-2023_Data/Managed/UnityEngine.UnityCurlModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1675626220717242, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1675626220717250, "dur":1244, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Roots of Furry/GGJ-2023_Data/Managed/UnityEngine.UnityCurlModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1675626220718543, "dur":38182, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Roots of Furry/GGJ-2023_Data/Managed/UnityEngine.UnityAnalyticsModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1675626220756729, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1675626220756735, "dur":65312, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Roots of Furry/GGJ-2023_Data/Managed/UnityEngine.UnityAnalyticsModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1675626220822213, "dur":37775, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Roots of Furry/GGJ-2023_Data/Managed/UnityEngine.UmbraModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1675626220859995, "dur":3, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1675626220860005, "dur":6872, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Roots of Furry/GGJ-2023_Data/Managed/UnityEngine.UmbraModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1675626220866937, "dur":193, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Roots of Furry/GGJ-2023_Data/Managed/UnityEngine.UIModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1675626220867133, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1675626220867139, "dur":9186, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Roots of Furry/GGJ-2023_Data/Managed/UnityEngine.UIModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1675626220876442, "dur":418, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Roots of Furry/GGJ-2023_Data/Managed/UnityEngine.UI.dll" }}
+,{ "pid":12345, "tid":3, "ts":1675626220876863, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1675626220876869, "dur":3440, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Roots of Furry/GGJ-2023_Data/Managed/UnityEngine.UI.dll" }}
+,{ "pid":12345, "tid":3, "ts":1675626220880361, "dur":187, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Roots of Furry/GGJ-2023_Data/Managed/UnityEngine.TilemapModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1675626220880550, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1675626220880556, "dur":1986, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Roots of Furry/GGJ-2023_Data/Managed/UnityEngine.TilemapModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1675626220882590, "dur":167, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Roots of Furry/GGJ-2023_Data/Managed/UnityEngine.TextRenderingModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1675626220882760, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1675626220882765, "dur":16734, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Roots of Furry/GGJ-2023_Data/Managed/UnityEngine.TextRenderingModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1675626220899550, "dur":212, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Roots of Furry/GGJ-2023_Data/Managed/UnityEngine.TextCoreFontEngineModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1675626220899765, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1675626220899770, "dur":2700, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Roots of Furry/GGJ-2023_Data/Managed/UnityEngine.TextCoreFontEngineModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1675626220902520, "dur":44038, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Roots of Furry/GGJ-2023_Data/Managed/UnityEngine.TerrainModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1675626220946562, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1675626220946569, "dur":36709, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Roots of Furry/GGJ-2023_Data/Managed/UnityEngine.TerrainModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1675626220983325, "dur":13139, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Roots of Furry/GGJ-2023_Data/Managed/UnityEngine.SpriteMaskModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1675626221092119, "dur":20, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1675626221092164, "dur":197024, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Roots of Furry/GGJ-2023_Data/Managed/UnityEngine.SpriteMaskModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1675626221294872, "dur":2011, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Roots of Furry/GGJ-2023_Data/Managed/UnityEngine.Physics2DModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1675626221296891, "dur":3, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1675626221298255, "dur":6385, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Roots of Furry/GGJ-2023_Data/Managed/UnityEngine.Physics2DModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1675626221304799, "dur":482, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Roots of Furry/GGJ-2023_Data/Managed/UnityEngine.JSONSerializeModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1675626221305290, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1675626221305330, "dur":5896, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Roots of Furry/GGJ-2023_Data/Managed/UnityEngine.JSONSerializeModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1675626221311397, "dur":64289, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Roots of Furry/GGJ-2023_Data/Managed/UnityEngine.InputModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1675626221375689, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1675626221375694, "dur":72818, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Roots of Furry/GGJ-2023_Data/Managed/UnityEngine.InputModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1675626221448681, "dur":147434, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Roots of Furry/GGJ-2023_Data/Managed/UnityEngine.GameCenterModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1675626221596119, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1675626221596125, "dur":1284, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Roots of Furry/GGJ-2023_Data/Managed/UnityEngine.GameCenterModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1675626221597454, "dur":202839, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Roots of Furry/GGJ-2023_Data/Managed/UnityEngine.ClothModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1675626221800296, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1675626221800348, "dur":1559, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Roots of Furry/GGJ-2023_Data/Managed/UnityEngine.ClothModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1675626221801952, "dur":49816, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Roots of Furry/GGJ-2023_Data/Managed/UnityEngine.AssetBundleModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1675626221851772, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1675626221851779, "dur":36006, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Roots of Furry/GGJ-2023_Data/Managed/UnityEngine.AssetBundleModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1675626221887914, "dur":133672, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Roots of Furry/GGJ-2023_Data/Managed/UnityEngine.AndroidJNIModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1675626222021589, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1675626222021613, "dur":1444, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Roots of Furry/GGJ-2023_Data/Managed/UnityEngine.AndroidJNIModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1675626222023105, "dur":147, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Roots of Furry/GGJ-2023_Data/Managed/Unity.2D.IK.Runtime.dll" }}
+,{ "pid":12345, "tid":3, "ts":1675626222023254, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1675626222023259, "dur":65698, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Roots of Furry/GGJ-2023_Data/Managed/Unity.2D.IK.Runtime.dll" }}
+,{ "pid":12345, "tid":3, "ts":1675626222089012, "dur":3142, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Roots of Furry/GGJ-2023_Data/Managed/System.Xml.dll" }}
+,{ "pid":12345, "tid":3, "ts":1675626222092157, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1675626222092161, "dur":3386, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Roots of Furry/GGJ-2023_Data/Managed/System.Xml.dll" }}
+,{ "pid":12345, "tid":3, "ts":1675626222095596, "dur":143, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Roots of Furry/GGJ-2023_Data/Managed/System.IO.Compression.FileSystem.dll" }}
+,{ "pid":12345, "tid":3, "ts":1675626222095741, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1675626222095746, "dur":21448, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Roots of Furry/GGJ-2023_Data/Managed/System.IO.Compression.FileSystem.dll" }}
+,{ "pid":12345, "tid":3, "ts":1675626222117244, "dur":567, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Roots of Furry/GGJ-2023_Data/Managed/System.Drawing.dll" }}
+,{ "pid":12345, "tid":3, "ts":1675626222117814, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1675626222117819, "dur":1907, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Roots of Furry/GGJ-2023_Data/Managed/System.Drawing.dll" }}
+,{ "pid":12345, "tid":3, "ts":1675626222119774, "dur":148, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Roots of Furry/GGJ-2023_Data/Managed/System.Data.DataSetExtensions.dll" }}
+,{ "pid":12345, "tid":3, "ts":1675626222119924, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1675626222119930, "dur":984, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Roots of Furry/GGJ-2023_Data/Managed/System.Data.DataSetExtensions.dll" }}
+,{ "pid":12345, "tid":3, "ts":1675626222120959, "dur":1101, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Roots of Furry/GGJ-2023_Data/Managed/System.Core.dll" }}
+,{ "pid":12345, "tid":3, "ts":1675626222122063, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1675626222122069, "dur":229610, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Roots of Furry/GGJ-2023_Data/Managed/System.Core.dll" }}
+,{ "pid":12345, "tid":3, "ts":1675626222351855, "dur":2347, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Roots of Furry/GGJ-2023_Data/Managed/Newtonsoft.Json.dll" }}
+,{ "pid":12345, "tid":3, "ts":1675626222354210, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1675626222354224, "dur":37702, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Roots of Furry/GGJ-2023_Data/Managed/Newtonsoft.Json.dll" }}
+,{ "pid":12345, "tid":3, "ts":1675626222392048, "dur":112, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Roots of Furry/GGJ-2023_Data/sharedassets0.resource" }}
+,{ "pid":12345, "tid":3, "ts":1675626222392165, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1675626222392174, "dur":4872, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Roots of Furry/GGJ-2023_Data/sharedassets0.resource" }}
+,{ "pid":12345, "tid":3, "ts":1675626222397146, "dur":603, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Roots of Furry/GGJ-2023_Data/ScriptingAssemblies.json" }}
+,{ "pid":12345, "tid":3, "ts":1675626222397753, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1675626222397761, "dur":3647, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Roots of Furry/GGJ-2023_Data/ScriptingAssemblies.json" }}
+,{ "pid":12345, "tid":3, "ts":1675626222401481, "dur":62, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Roots of Furry/GGJ-2023_Data/globalgamemanagers" }}
+,{ "pid":12345, "tid":3, "ts":1675626222401546, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1675626222401551, "dur":2083, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Roots of Furry/GGJ-2023_Data/globalgamemanagers" }}
+,{ "pid":12345, "tid":3, "ts":1675626222403708, "dur":9525, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1675626217095666, "dur":0, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1675626217095666, "dur":7432, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1675626217103099, "dur":143687, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Roots of Furry/MonoBleedingEdge/etc/mono/4.5/web.config" }}
+,{ "pid":12345, "tid":4, "ts":1675626217246789, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1675626217246796, "dur":1443, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Roots of Furry/MonoBleedingEdge/etc/mono/4.5/web.config" }}
+,{ "pid":12345, "tid":4, "ts":1675626217248285, "dur":112, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Roots of Furry/MonoBleedingEdge/etc/mono/4.5/DefaultWsdlHelpGenerator.aspx" }}
+,{ "pid":12345, "tid":4, "ts":1675626217248399, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1675626217248442, "dur":2526151, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Roots of Furry/MonoBleedingEdge/etc/mono/4.5/DefaultWsdlHelpGenerator.aspx" }}
+,{ "pid":12345, "tid":4, "ts":1675626219774763, "dur":1092550, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Roots of Furry/UnityCrashHandler64.exe" }}
+,{ "pid":12345, "tid":4, "ts":1675626220867316, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1675626220867320, "dur":2523, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Roots of Furry/UnityCrashHandler64.exe" }}
+,{ "pid":12345, "tid":4, "ts":1675626220869901, "dur":222, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Roots of Furry/GGJ-2023_Data/Managed/UnityEngine.UIElementsNativeModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1675626220870126, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1675626220870131, "dur":1185, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Roots of Furry/GGJ-2023_Data/Managed/UnityEngine.UIElementsNativeModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1675626220871370, "dur":1562, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Roots of Furry/GGJ-2023_Data/Managed/UnityEngine.UIElementsModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1675626220872936, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1675626220872943, "dur":4515, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Roots of Furry/GGJ-2023_Data/Managed/UnityEngine.UIElementsModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1675626220877507, "dur":14205, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Roots of Furry/GGJ-2023_Data/Managed/UnityEngine.TLSModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1675626220891716, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1675626220891722, "dur":6744, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Roots of Furry/GGJ-2023_Data/Managed/UnityEngine.TLSModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1675626220898515, "dur":290, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Roots of Furry/GGJ-2023_Data/Managed/UnityEngine.TextCoreTextEngineModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1675626220898808, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1675626220898813, "dur":1295, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Roots of Furry/GGJ-2023_Data/Managed/UnityEngine.TextCoreTextEngineModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1675626220900158, "dur":13782, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Roots of Furry/GGJ-2023_Data/Managed/UnityEngine.TerrainPhysicsModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1675626220913944, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1675626220913950, "dur":1040, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Roots of Furry/GGJ-2023_Data/Managed/UnityEngine.TerrainPhysicsModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1675626220915035, "dur":22631, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Roots of Furry/GGJ-2023_Data/Managed/UnityEngine.SubstanceModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1675626220937670, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1675626220937676, "dur":46372, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Roots of Furry/GGJ-2023_Data/Managed/UnityEngine.SubstanceModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1675626220984094, "dur":158, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Roots of Furry/GGJ-2023_Data/Managed/UnityEngine.SharedInternalsModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1675626220984255, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1675626220984261, "dur":108861, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Roots of Furry/GGJ-2023_Data/Managed/UnityEngine.SharedInternalsModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1675626221093331, "dur":37733, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Roots of Furry/GGJ-2023_Data/Managed/UnityEngine.RuntimeInitializeOnLoadManagerInitializerModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1675626221131076, "dur":4, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1675626221131094, "dur":164782, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Roots of Furry/GGJ-2023_Data/Managed/UnityEngine.RuntimeInitializeOnLoadManagerInitializerModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1675626221296060, "dur":1142, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Roots of Furry/GGJ-2023_Data/Managed/UnityEngine.ParticleSystemModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1675626221297211, "dur":3, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1675626221297226, "dur":4796, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Roots of Furry/GGJ-2023_Data/Managed/UnityEngine.ParticleSystemModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1675626221302188, "dur":60877, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Roots of Furry/GGJ-2023_Data/Managed/UnityEngine.LocalizationModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1675626221363070, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1675626221363077, "dur":80186, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Roots of Furry/GGJ-2023_Data/Managed/UnityEngine.LocalizationModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1675626221443581, "dur":121440, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Roots of Furry/GGJ-2023_Data/Managed/UnityEngine.HotReloadModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1675626221565027, "dur":3, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1675626221565037, "dur":9213, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Roots of Furry/GGJ-2023_Data/Managed/UnityEngine.HotReloadModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1675626221574319, "dur":225, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Roots of Furry/GGJ-2023_Data/Managed/UnityEngine.DirectorModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1675626221574548, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1675626221574555, "dur":5998, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Roots of Furry/GGJ-2023_Data/Managed/UnityEngine.DirectorModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1675626221580612, "dur":233908, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Roots of Furry/GGJ-2023_Data/Managed/UnityEngine.CrashReportingModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1675626221814523, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1675626221814528, "dur":74066, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Roots of Furry/GGJ-2023_Data/Managed/UnityEngine.CrashReportingModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1675626221888739, "dur":418, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Roots of Furry/GGJ-2023_Data/Managed/UnityEngine.AIModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1675626221889163, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1675626221889174, "dur":55214, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Roots of Furry/GGJ-2023_Data/Managed/UnityEngine.AIModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1675626221944502, "dur":161, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Roots of Furry/GGJ-2023_Data/Managed/Unity.VisualScripting.State.dll" }}
+,{ "pid":12345, "tid":4, "ts":1675626221944666, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1675626221944672, "dur":1714, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Roots of Furry/GGJ-2023_Data/Managed/Unity.VisualScripting.State.dll" }}
+,{ "pid":12345, "tid":4, "ts":1675626221946431, "dur":612, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Roots of Furry/GGJ-2023_Data/Managed/Unity.VisualScripting.Core.dll" }}
+,{ "pid":12345, "tid":4, "ts":1675626221947046, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1675626221947051, "dur":1844, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Roots of Furry/GGJ-2023_Data/Managed/Unity.VisualScripting.Core.dll" }}
+,{ "pid":12345, "tid":4, "ts":1675626221948945, "dur":426, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Roots of Furry/GGJ-2023_Data/Managed/Unity.TextMeshPro.dll" }}
+,{ "pid":12345, "tid":4, "ts":1675626221949373, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1675626221949378, "dur":2164, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Roots of Furry/GGJ-2023_Data/Managed/Unity.TextMeshPro.dll" }}
+,{ "pid":12345, "tid":4, "ts":1675626221951594, "dur":152, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Roots of Furry/GGJ-2023_Data/Managed/Unity.Services.Core.Telemetry.dll" }}
+,{ "pid":12345, "tid":4, "ts":1675626221951749, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1675626221951753, "dur":1787, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Roots of Furry/GGJ-2023_Data/Managed/Unity.Services.Core.Telemetry.dll" }}
+,{ "pid":12345, "tid":4, "ts":1675626221953588, "dur":135, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Roots of Furry/GGJ-2023_Data/Managed/Unity.Services.Core.Scheduler.dll" }}
+,{ "pid":12345, "tid":4, "ts":1675626221953725, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1675626221953731, "dur":1203, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Roots of Furry/GGJ-2023_Data/Managed/Unity.Services.Core.Scheduler.dll" }}
+,{ "pid":12345, "tid":4, "ts":1675626221954987, "dur":130, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Roots of Furry/GGJ-2023_Data/Managed/Unity.Services.Core.Networking.dll" }}
+,{ "pid":12345, "tid":4, "ts":1675626221955119, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1675626221955124, "dur":1589, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Roots of Furry/GGJ-2023_Data/Managed/Unity.Services.Core.Networking.dll" }}
+,{ "pid":12345, "tid":4, "ts":1675626221956768, "dur":256, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Roots of Furry/GGJ-2023_Data/Managed/Unity.Services.Core.Environments.Internal.dll" }}
+,{ "pid":12345, "tid":4, "ts":1675626221957027, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1675626221957033, "dur":1736, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Roots of Furry/GGJ-2023_Data/Managed/Unity.Services.Core.Environments.Internal.dll" }}
+,{ "pid":12345, "tid":4, "ts":1675626221958817, "dur":138, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Roots of Furry/GGJ-2023_Data/Managed/Unity.Services.Core.dll" }}
+,{ "pid":12345, "tid":4, "ts":1675626221958958, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1675626221958962, "dur":1259, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Roots of Furry/GGJ-2023_Data/Managed/Unity.Services.Core.dll" }}
+,{ "pid":12345, "tid":4, "ts":1675626221960271, "dur":139, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Roots of Furry/GGJ-2023_Data/Managed/Unity.Services.Core.Configuration.dll" }}
+,{ "pid":12345, "tid":4, "ts":1675626221960412, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1675626221960417, "dur":1419, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Roots of Furry/GGJ-2023_Data/Managed/Unity.Services.Core.Configuration.dll" }}
+,{ "pid":12345, "tid":4, "ts":1675626221961885, "dur":698, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Roots of Furry/GGJ-2023_Data/Managed/Unity.Mathematics.dll" }}
+,{ "pid":12345, "tid":4, "ts":1675626221962585, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1675626221962607, "dur":1551, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Roots of Furry/GGJ-2023_Data/Managed/Unity.Mathematics.dll" }}
+,{ "pid":12345, "tid":4, "ts":1675626221964207, "dur":366, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Roots of Furry/GGJ-2023_Data/Managed/Unity.Burst.dll" }}
+,{ "pid":12345, "tid":4, "ts":1675626221964576, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1675626221964580, "dur":1256, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Roots of Furry/GGJ-2023_Data/Managed/Unity.Burst.dll" }}
+,{ "pid":12345, "tid":4, "ts":1675626221965889, "dur":56164, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Roots of Furry/GGJ-2023_Data/Managed/Unity.Burst.Cecil.Mdb.dll" }}
+,{ "pid":12345, "tid":4, "ts":1675626222022056, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1675626222022061, "dur":64021, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Roots of Furry/GGJ-2023_Data/Managed/Unity.Burst.Cecil.Mdb.dll" }}
+,{ "pid":12345, "tid":4, "ts":1675626222086132, "dur":240, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Roots of Furry/GGJ-2023_Data/Managed/System.Xml.Linq.dll" }}
+,{ "pid":12345, "tid":4, "ts":1675626222086374, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1675626222086378, "dur":2882, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Roots of Furry/GGJ-2023_Data/Managed/System.Xml.Linq.dll" }}
+,{ "pid":12345, "tid":4, "ts":1675626222089320, "dur":304, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Roots of Furry/GGJ-2023_Data/Managed/System.ServiceModel.Internals.dll" }}
+,{ "pid":12345, "tid":4, "ts":1675626222089627, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1675626222089631, "dur":1694, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Roots of Furry/GGJ-2023_Data/Managed/System.ServiceModel.Internals.dll" }}
+,{ "pid":12345, "tid":4, "ts":1675626222091369, "dur":909, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Roots of Furry/GGJ-2023_Data/Managed/System.Runtime.Serialization.dll" }}
+,{ "pid":12345, "tid":4, "ts":1675626222092281, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1675626222092285, "dur":2530, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Roots of Furry/GGJ-2023_Data/Managed/System.Runtime.Serialization.dll" }}
+,{ "pid":12345, "tid":4, "ts":1675626222094881, "dur":225, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Roots of Furry/GGJ-2023_Data/Managed/System.Net.Http.dll" }}
+,{ "pid":12345, "tid":4, "ts":1675626222095109, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1675626222095113, "dur":21806, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Roots of Furry/GGJ-2023_Data/Managed/System.Net.Http.dll" }}
+,{ "pid":12345, "tid":4, "ts":1675626222117019, "dur":180, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Roots of Furry/GGJ-2023_Data/Managed/System.EnterpriseServices.dll" }}
+,{ "pid":12345, "tid":4, "ts":1675626222117202, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1675626222117206, "dur":1704, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Roots of Furry/GGJ-2023_Data/Managed/System.EnterpriseServices.dll" }}
+,{ "pid":12345, "tid":4, "ts":1675626222118958, "dur":2025, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Roots of Furry/GGJ-2023_Data/Managed/System.Data.dll" }}
+,{ "pid":12345, "tid":4, "ts":1675626222120986, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1675626222120991, "dur":224699, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Roots of Furry/GGJ-2023_Data/Managed/System.Data.dll" }}
+,{ "pid":12345, "tid":4, "ts":1675626222345854, "dur":753, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Roots of Furry/GGJ-2023_Data/Managed/System.Configuration.dll" }}
+,{ "pid":12345, "tid":4, "ts":1675626222346615, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1675626222346630, "dur":5655, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Roots of Furry/GGJ-2023_Data/Managed/System.Configuration.dll" }}
+,{ "pid":12345, "tid":4, "ts":1675626222352447, "dur":13459, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Roots of Furry/GGJ-2023_Data/Managed/mscorlib.dll" }}
+,{ "pid":12345, "tid":4, "ts":1675626222365916, "dur":3, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1675626222365931, "dur":25941, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Roots of Furry/GGJ-2023_Data/Managed/mscorlib.dll" }}
+,{ "pid":12345, "tid":4, "ts":1675626222391990, "dur":118, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Roots of Furry/GGJ-2023_Data/Resources/unity_builtin_extra" }}
+,{ "pid":12345, "tid":4, "ts":1675626222392114, "dur":11, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1675626222392242, "dur":2646, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Roots of Furry/GGJ-2023_Data/Resources/unity_builtin_extra" }}
+,{ "pid":12345, "tid":4, "ts":1675626222394971, "dur":78, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Roots of Furry/GGJ-2023_Data/sharedassets0.assets" }}
+,{ "pid":12345, "tid":4, "ts":1675626222395053, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1675626222395060, "dur":2975, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Roots of Furry/GGJ-2023_Data/sharedassets0.assets" }}
+,{ "pid":12345, "tid":4, "ts":1675626222398170, "dur":83, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Roots of Furry/GGJ-2023_Data/level0" }}
+,{ "pid":12345, "tid":4, "ts":1675626222398257, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1675626222398263, "dur":2831, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Roots of Furry/GGJ-2023_Data/level0" }}
+,{ "pid":12345, "tid":4, "ts":1675626222401185, "dur":78, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Roots of Furry/GGJ-2023_Data/globalgamemanagers.assets" }}
+,{ "pid":12345, "tid":4, "ts":1675626222401267, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1675626222401273, "dur":2030, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Roots of Furry/GGJ-2023_Data/globalgamemanagers.assets" }}
+,{ "pid":12345, "tid":4, "ts":1675626222403379, "dur":185, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Roots of Furry/GGJ-2023_Data/boot.config" }}
+,{ "pid":12345, "tid":4, "ts":1675626222403567, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1675626222403573, "dur":1515, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Roots of Furry/GGJ-2023_Data/boot.config" }}
+,{ "pid":12345, "tid":4, "ts":1675626222405153, "dur":8078, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1675626222418926, "dur":2185, "ph":"X", "name": "ProfilerWriteOutput" }
+,{ "pid": 0, "tid": 1, "ts": 1675626222444536, "dur": 868, "ph": "X", "name": "backend_profiler1.traceevents", "args": {} },
+{ "pid": 0, "tid": 1, "ts": 1675626222443947, "dur": 1478, "ph": "X", "name": "Write chrome-trace events", "args": {} },

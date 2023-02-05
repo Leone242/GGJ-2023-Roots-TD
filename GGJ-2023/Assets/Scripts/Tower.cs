@@ -7,6 +7,8 @@ public class Tower : MonoBehaviour
     public float hp = 40;
     [SerializeField]
     public GameObject Panel;
+    [SerializeField]
+    public AudioClip ac;
 
 
 
@@ -20,6 +22,7 @@ public class Tower : MonoBehaviour
         hp -= damage;
         if (hp <= 0)
         {
+            AudioController.AudioInstance.PlayOneShot(ac);
             Panel.GetComponent<PanelController>().EndGame();
             gameObject.SetActive(false);    
         }

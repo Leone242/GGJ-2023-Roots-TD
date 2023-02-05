@@ -18,6 +18,8 @@ public class Soldier : MonoBehaviour
     private GameObject Rock;
     private float timer = 0;
     private int frequency = 2;
+    [SerializeField]
+    public AudioClip ac;
 
     private void Start()
     {
@@ -83,7 +85,8 @@ public class Soldier : MonoBehaviour
         hp -= damage;
         if(hp <= 0)
         {
-            Destroy(gameObject);
+            AudioController.AudioInstance.PlayOneShot(ac);
+            Destroy(gameObject, 1);
         }
     }
 }

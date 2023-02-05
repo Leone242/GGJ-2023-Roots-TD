@@ -21,6 +21,10 @@ public class EnemyBear : MonoBehaviour
     private GameObject pillbox;
     private GameObject tower;
     private GameObject soldier;
+    [SerializeField]
+    public AudioClip ac;
+    [SerializeField]
+    public AudioClip acHit;
 
     public void Start()
     {
@@ -87,6 +91,7 @@ public class EnemyBear : MonoBehaviour
 
     public void Atack(float damage)
     {
+        AudioController.AudioInstance.PlayOneShot(acHit);
         target = FindTarget();
         if (target == door)
         {
@@ -126,8 +131,9 @@ public class EnemyBear : MonoBehaviour
         hp -= dmg;
         if (hp <= 0)
         {
+            AudioController.AudioInstance.PlayOneShot(ac);
             Spawner.GetComponent<Spawner>().EnemyKilled();
-            Destroy(gameObject);
+            Destroy(gameObject, 1);
 
         }
     }

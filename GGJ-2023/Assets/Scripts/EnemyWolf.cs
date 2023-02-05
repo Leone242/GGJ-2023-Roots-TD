@@ -17,6 +17,10 @@ public class EnemyWolf : MonoBehaviour
     private float timer = 0;
     private float timeAtack = 2;
     private float life;
+    [SerializeField]
+    public AudioClip ac;
+    [SerializeField]
+    public AudioClip acHit;
 
 
     public void Start()
@@ -60,6 +64,7 @@ public class EnemyWolf : MonoBehaviour
     }
     public void Atack(float damage)
     {
+        AudioController.AudioInstance.PlayOneShot(acHit);
         target.GetComponent<Door>().TakeDamage(damage);
         MoveToTarget();
     }
@@ -85,8 +90,9 @@ public class EnemyWolf : MonoBehaviour
         hp -= dmg;
         if (hp <= 0)
         {
+            AudioController.AudioInstance.PlayOneShot(ac);
             Spawner.GetComponent<Spawner>().EnemyKilled();
-            Destroy(gameObject);
+            Destroy(gameObject, 1);
 
         }
     }

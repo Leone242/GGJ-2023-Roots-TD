@@ -16,6 +16,8 @@ public class Pillbox : MonoBehaviour
     public GameObject SpawnPoint;
     private float timer;
     private float t = 4;
+    [SerializeField]
+    public AudioClip ac;
 
     private void Start()
     {
@@ -49,6 +51,7 @@ public class Pillbox : MonoBehaviour
         hp -= damage;
         if(hp <= 0)
         {
+            AudioController.AudioInstance.PlayOneShot(ac);
             gameObject.SetActive(false);
         }
     }

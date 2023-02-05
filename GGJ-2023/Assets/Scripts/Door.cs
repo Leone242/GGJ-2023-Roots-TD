@@ -8,6 +8,7 @@ public class Door : MonoBehaviour
     [SerializeField]
     public GameObject Panel;
 
+
     public void Start()
     {
         hp = 50;

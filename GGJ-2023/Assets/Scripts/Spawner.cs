@@ -75,7 +75,7 @@ public class Spawner : MonoBehaviour
     private Vector3 RandomPosition()
     {
         Vector3 spawnPosition = Random.insideUnitSphere * 20;
-        spawnPosition.y = 0;
+        spawnPosition.y = 1;
 
         return spawnPosition;
     }
